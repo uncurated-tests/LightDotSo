@@ -19,7 +19,7 @@ import { notFound } from "next/navigation";
 export const handler = async (params: { address: string }) => {
   let res = await getWallet(params.address);
 
-  res.map(response => {
+  res.map((response: any) => {
     if (response && response.response && response.response.status !== 200) {
       return notFound();
     }
