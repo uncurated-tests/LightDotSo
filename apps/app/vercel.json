@@ -1,3 +1,7 @@
 {
-  "ignoreCommand": "npx turbo-ignore --fallback=HEAD^"
+  "build": {
+		"env": {
+			"VERCEL_CLI_VERSION": "vercel@32.4.0"
+		}
+	}
 }
